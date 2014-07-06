@@ -2,7 +2,7 @@
 
 OS X Yosemite inspired light theme for Sublime Text 3.
 
-Based on Soda Theme by Ian Hill [http://buymeasoda.com/](http://buymeasoda.com/)
+Based on Soda Theme by Ian Hill ([http://buymeasoda.com/](http://buymeasoda.com/))
 
 ## Design
 
