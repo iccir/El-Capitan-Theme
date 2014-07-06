@@ -7,20 +7,20 @@
     // Tab set
     {
         "class": "tabset_control",
-        "layer0.texture": "Theme - Soda/Soda Light/tabset-background.png",
+        "layer0.texture": "Theme - El Capitan/Assets/tabset-background.png",
         "layer0.inner_margin": [1, 7],
         "layer0.opacity": 1.0,
-        "content_margin": [-4, 0, -4, 3],
+        "content_margin": [-4, 0, -4, 0],
         "tab_overlap": 5,
         "tab_width": 180,
         "tab_min_width": 45,
-        "tab_height": 25,
+        "tab_height": 28,
         "mouse_wheel_switch": false
     },
     {
         "class": "tabset_control",
         "settings": ["enable_tab_scrolling"],
-        "content_margin": [3, 0, 3, 3]
+        "content_margin": [3, 0, 3, 0]
     },
     {
         "class": "tabset_control",
@@ -30,10 +30,10 @@
     // Tab element
     {
         "class": "tab_control",
-        "content_margin": [12, 3, 12, 3],
+        "content_margin": [12, 0, 12, 0],
         "max_margin_trim": 0,
         "hit_test_level": 0.0,
-        "layer0.texture": "Theme - Soda/Soda Light/tab-inactive.png",
+        "layer0.texture": "Theme - El Capitan/Assets/tab-inactive.png",
         "layer0.inner_margin": [5, 5],
         "layer0.opacity": 1.0
     },
@@ -41,80 +41,26 @@
     {
         "class": "tab_control",
         "settings": ["show_tab_close_buttons"],
-        "content_margin": [12, 3, 7, 3]
+        "content_margin": [12, 0, 7, 0]
     },
     // Tab hover state
     {
         "class": "tab_control",
         "attributes": ["hover"],
-        "layer0.texture": "Theme - Soda/Soda Light/tab-hover.png"
+        "layer0.texture": "Theme - El Capitan/Assets/tab-hover.png"
     },
     // Tab active state
     {
         "class": "tab_control",
         "attributes": ["selected"],
-        "layer0.texture": "Theme - Soda/Soda Light/tab-active.png"
+        "layer0.texture": "Theme - El Capitan/Assets/tab-active.png"
     },
     // Tab dirty state (close button hidden)
     {
         "class": "tab_control",
         "settings": ["!show_tab_close_buttons"],
         "attributes": ["dirty"],
-        "content_margin": [12, 3, 7, 3]
-    },
-
-//
-// TABS (CLASSIC)
-//
-
-    // Tab set
-    {
-        "class": "tabset_control",
-        "settings": ["soda_classic_tabs"],
-        "content_margin": [3, 4, 3, 3],
-        "tab_overlap": 24,
-        "tab_height": 28
-    },
-    {
-        "class": "tabset_control",
-        "settings": ["soda_classic_tabs", "enable_tab_scrolling"],
-        "content_margin": [6, 4, 6, 3]
-    },
-    // Tab element
-    {
-        "class": "tab_control",
-        "settings": ["soda_classic_tabs"],
-        "content_margin": [22, 6, 22, 4],
-        "hit_test_level": 0.5,
-        "layer0.texture": "Theme - Soda/Soda Light/classic/tab-inactive.png",
-        "layer0.inner_margin": [18, 4]
-    },
-    // Tab close state
-    {
-        "class": "tab_control",
-        "settings": ["soda_classic_tabs", "show_tab_close_buttons"],
-        "content_margin": [22, 6, 15, 4]
-    },
-    // Tab hover state
-    {
-        "class": "tab_control",
-        "settings": ["soda_classic_tabs"],
-        "attributes": ["hover"],
-        "layer0.texture": "Theme - Soda/Soda Light/classic/tab-hover.png"
-    },
-    // Tab active state
-    {
-        "class": "tab_control",
-        "settings": ["soda_classic_tabs"],
-        "attributes": ["selected"],
-        "layer0.texture": "Theme - Soda/Soda Light/classic/tab-active.png"
-    },
-    // Tab dirty state (close button hidden)
-    {
-        "class": "tab_control",
-        "settings": ["soda_classic_tabs", "!show_tab_close_buttons"],
-        "attributes": ["dirty"],
-        "content_margin": [22, 6, 15, 4]
+        "content_margin": [12, 0, 7, 0]
     },
 
 //
@@ -203,22 +149,20 @@
     {
         "class": "tab_label",
         "fade": true,
-        "fg": [50, 50, 50],
-        "shadow_color": [235, 235, 235],
-        "shadow_offset": [0, 1],
+        "fg": [80, 80, 80],
+        "shadow_color": [255, 255, 255],
+        "shadow_offset": [0, 0],
         "font.italic": false
     },
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
-        "fg": [25, 25, 25],
-        "shadow_color": [245, 245, 245]
+        "fg": [40, 40, 40]
     },
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "fg": [0, 0, 0],
-        "shadow_color": [255, 255, 255]
+        "fg": [0, 0, 0]
     },
     {
         "class": "tab_label",
@@ -491,15 +435,15 @@
     {
         "class": "label_control",
         "parents": [{"class": "panel_control"}],
-        "shadow_color": [250, 250, 250],
-        "shadow_offset": [0, 1]
+        "shadow_color": [255, 255, 255],
+        "shadow_offset": [0, 0]
     },
     // Button labels
     {
         "class": "label_control",
         "parents": [{"class": "button_control"}],
-        "shadow_color": [245, 245, 245],
-        "shadow_offset": [0, 1]
+        "shadow_color": [255, 255, 255],
+        "shadow_offset": [0, 0]
     },
 
 //
@@ -527,7 +471,7 @@
     // Status bar container
     {
         "class": "status_bar",
-        "layer0.texture": "Theme - Soda/Soda Light/status-bar-background.png",
+        "layer0.texture": "Theme - El Capitan/Assets/status-bar-background.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [2, 2],
         "content_margin": [8, 4, 8, 4]
@@ -541,9 +485,9 @@
     {
         "class": "label_control",
         "parents": [{"class": "status_bar"}],
-        "color": [47, 47, 47],
-        "shadow_color": [220, 220, 220],
-        "shadow_offset": [0, 1]
+        "color": [80, 80, 80],
+        "shadow_color": [255, 255, 255],
+        "shadow_offset": [0, 0]
     },
 
 //
@@ -553,7 +497,7 @@
     // Sidebar container
     {
         "class": "sidebar_container",
-        "layer0.texture": "Theme - Soda/Soda Light/sidebar-bg.png",
+        "layer0.texture": "Theme - El Capitan/Assets/sidebar-bg.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [1, 1, 2, 1],
         "content_margin": [0, 0, 1, 0]
@@ -584,22 +528,21 @@
         "class": "sidebar_heading",
         "color": [110, 126, 141],
         "font.bold": true,
-        "shadow_color": [249, 250, 252],
-        "shadow_offset": [0, 1]
+        "shadow_color": [255, 255, 255],
+        "shadow_offset": [0, 0]
     },
     // Sidebar heading selected
     {
         "class": "sidebar_heading",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "color": [255, 255, 255],
-        "shadow_color": [34, 94, 145]
+        "color": [255, 255, 255]
     },
     // Sidebar entry
     {
         "class": "sidebar_label",
         "color": [0, 0, 0],
-        "shadow_color": [241, 244, 247],
-        "shadow_offset": [0, 1],
+        "shadow_color": [255, 255, 255],
+        "shadow_offset": [0, 0],
         "font.bold": false,
         "font.italic": false
     },
@@ -631,9 +574,7 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "color": [255, 255, 255],
-        "shadow_color": [34, 94, 145],
-        "shadow_offset": [0, 1]
+        "color": [255, 255, 255]
     },
     // Sidebar entry transient
     {
@@ -802,7 +743,7 @@
         "class": "button_control",
         "content_margin": [6, 5, 6, 6],
         "min_size": [75, 0],
-        "layer0.texture": "Theme - Soda/Soda Light/btn-large.png",
+        "layer0.texture": "Theme - El Capitan/Assets/btn-small.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [6, 6]
     },
@@ -810,7 +751,7 @@
     {
         "class": "button_control",
         "attributes": ["pressed"],
-        "layer0.texture": "Theme - Soda/Soda Light/btn-large-on.png"
+        "layer0.texture": "Theme - El Capitan/Assets/btn-small-pressed.png"
     },
 
 //
@@ -847,7 +788,7 @@
     // Bottom panel background
     {
         "class": "panel_control",
-        "layer0.texture": "Theme - Soda/Soda Light/panel-background.png",
+        "layer0.texture": "Theme - El Capitan/Assets/panel-background.png",
         "layer0.inner_margin": [2, 2, 2, 2],
         "layer0.opacity": 1.0,
         "content_margin": [2, 3, 2, 1]
@@ -970,52 +911,53 @@
     // Button group middle
     {
         "class": "icon_button_control",
-        "layer0.texture": "Theme - Soda/Soda Light/btn-group-middle.png",
+        "layer0.texture": "Theme - El Capitan/Assets/btn-group-middle.png",
         "layer0.inner_margin": [6, 6],
         "layer0.opacity": 1.0,
         "content_margin": [3, 3]
     },
     {
         "class": "icon_button_control",
-        "attributes": ["selected"],
-        "layer0.texture": "Theme - Soda/Soda Light/btn-group-middle-on.png"
+        "attributes": ["pressed"],
+        "layer0.texture": "Theme - El Capitan/Assets/btn-group-middle-pressed.png",
     },
     // Button group left
     {
         "class": "icon_button_control",
         "attributes": ["left"],
-        "layer0.texture": "Theme - Soda/Soda Light/btn-group-left.png",
+        "layer0.texture": "Theme - El Capitan/Assets/btn-group-left.png",
         "content_margin": [4, 3, 3, 3]
     },
     {
         "class": "icon_button_control",
-        "attributes": ["left", "selected"],
-        "layer0.texture": "Theme - Soda/Soda Light/btn-group-left-on.png"
+        "attributes": ["left", "pressed"],
+        "layer0.texture": "Theme - El Capitan/Assets/btn-group-left-pressed.png",
     },
     // Button group right
     {
         "class": "icon_button_control",
         "attributes": ["right"],
-        "layer0.texture": "Theme - Soda/Soda Light/btn-group-right.png",
+        "layer0.texture": "Theme - El Capitan/Assets/btn-group-right.png",
         "content_margin": [3, 3, 4, 3]
     },
     {
         "class": "icon_button_control",
-        "attributes": ["right", "selected"],
-        "layer0.texture": "Theme - Soda/Soda Light/btn-group-right-on.png"
+        "attributes": ["right", "pressed"],
+        "layer0.texture": "Theme - El Capitan/Assets/btn-group-right-pressed.png",
     },
     // Button single
     {
         "class": "icon_button_control",
         "attributes": ["left", "right"],
-        "layer0.texture": "Theme - Soda/Soda Light/btn-small.png",
+        "layer0.texture": "Theme - El Capitan/Assets/btn-small.png",
         "content_margin": [4, 3]
     },
     {
         "class": "icon_button_control",
-        "attributes": ["left", "right", "selected"],
-        "layer0.texture": "Theme - Soda/Soda Light/btn-small-on.png"
+        "attributes": ["left", "right", "pressed"],
+        "layer0.texture": "Theme - El Capitan/Assets/btn-small-pressed.png",
     },
+
     // Panel close button
     {
         "class": "panel_close_button",
