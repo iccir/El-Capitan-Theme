@@ -142,7 +142,7 @@
     // Tab scroll left
     {
         "class": "scroll_tabs_left_button",
-        "content_margin": [9, 7, 8, 6],
+        "content_margin": [9, 6, 8, 7],
         "layer0.texture": "Theme - El Capitan/Assets/tabset-left.png",
         "layer0.opacity": 0.5,
         "layer0.inner_margin": 0
@@ -172,25 +172,22 @@
 
     {
         "class": "fold_button_control",
-        "layer0.texture": "Theme - El Capitan/Soda Light/fold-closed.png",
-        "layer0.opacity": 1.0,
+        "layer0.texture": "Theme - El Capitan/Assets/group-closed.png",
         "layer0.inner_margin": 0,
-        "content_margin": [8, 8]
+        "content_margin": [8, 8],
+        "layer0.tint": [ 0, 0, 0 ],
+        "layer0.opacity": 0.5
     },
     {
         "class": "fold_button_control",
         "attributes": ["hover"],
-        "layer0.texture": "Theme - El Capitan/Soda Light/fold-closed-hover.png"
+        "layer0.opacity": 0.65
     },
     {
         "class": "fold_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - El Capitan/Soda Light/fold-open.png"
-    },
-    {
-        "class": "fold_button_control",
-        "attributes": ["expanded", "hover"],
-        "layer0.texture": "Theme - El Capitan/Soda Light/fold-open-hover.png"
+        "layer0.texture": "Theme - El Capitan/Assets/group-open.png",
+        "layer0.tint": [ 0, 0, 0 ],
     },
 
 //
@@ -478,7 +475,7 @@
     // Sidebar heading
     {
         "class": "sidebar_heading",
-        "color": [110, 126, 141],
+        "color": [128, 128, 128],
         "font.bold": true,
         "shadow_color": [255, 255, 255],
         "shadow_offset": [0, 0]
@@ -502,25 +499,25 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "color": [70, 86, 102]
+        "color": [ 60, 60, 60 ],
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
-        "color": [45, 56, 68]
+        "color": [ 40, 40, 40 ]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
         "settings": ["bold_folder_labels"],
-        "color": [110, 126, 141],
+        "color": [60, 60, 60],
         "font.bold": true
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
         "settings": ["bold_folder_labels"],
-        "color": [81, 92, 103]
+        "color": [40, 40, 40]
     },
     // Sidebar entry selected
     {
@@ -591,70 +588,57 @@
     {
         "class": "disclosure_button_control",
         "content_margin": [8, 8],
-        "layer0.texture": "Theme - El Capitan/Soda Light/group-closed.png",
-        "layer0.opacity": 1.0,
+        "layer0.texture": "Theme - El Capitan/Assets/group-closed.png",
+        "layer0.opacity": 0.65,
+        "layer0.tint": [ 0, 0, 0 ],
         "layer0.inner_margin": 0
     },
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - El Capitan/Soda Light/group-closed-hover.png"
+        "layer0.opacity": 0.85,
     },
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - El Capitan/Soda Light/group-closed-selected.png"
+        "layer0.tint": [ 255, 255, 255 ],
+        "layer0.opacity": 1.0
     },
     // Sidebar group open
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - El Capitan/Soda Light/group-open.png"
-    },
-    {
-        "class": "disclosure_button_control",
-        "attributes": ["expanded"],
-        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - El Capitan/Soda Light/group-open-hover.png"
+        "layer0.texture": "Theme - El Capitan/Assets/group-open.png"
     },
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - El Capitan/Soda Light/group-open-selected.png"
     },
     // Sidebar folder closed
     {
         "class": "icon_folder",
-        "layer0.texture": "Theme - El Capitan/Soda Light/folder-closed.png",
-        "layer0.opacity": 1.0,
+        "layer0.texture": "Theme - El Capitan/Assets/folder-closed.png",
+        "layer0.opacity": 0.65,
+        "layer0.tint": [ 0, 0, 0 ],
         "content_margin": [8, 8]
     },
     {
         "class": "icon_folder",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - El Capitan/Soda Light/folder-closed-hover.png"
+        "layer0.opacity": 0.85
     },
     {
         "class": "icon_folder",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - El Capitan/Soda Light/folder-closed-selected.png"
+        "layer0.tint": [ 255, 255, 255 ],
+        "layer0.opacity": 1.0
     },
     // Sidebar folder open
     {
         "class": "icon_folder",
         "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
-        "layer0.texture": "Theme - El Capitan/Soda Light/folder-open.png"
-    },
-    {
-        "class": "icon_folder",
-        "parents": [{"class": "tree_row", "attributes": ["expanded", "hover"]}],
-        "layer0.texture": "Theme - El Capitan/Soda Light/folder-open-hover.png"
-    },
-    {
-        "class": "icon_folder",
-        "parents": [{"class": "tree_row", "attributes": ["expanded", "selected"]}],
-        "layer0.texture": "Theme - El Capitan/Soda Light/folder-open-selected.png"
+        "layer0.texture": "Theme - El Capitan/Assets/folder-open.png"
     },
     // Sidebar folder loading
     {
@@ -748,7 +732,6 @@
     // Quick panel background
     {
         "class": "overlay_control",
-        "settings": ["!soda_retina_fix"],
         "layer0.texture": "Theme - El Capitan/Soda Light/quick-panel-background.png",
         "layer0.inner_margin": [12, 6, 12, 15],
         "layer0.opacity": 1.0,
@@ -756,14 +739,6 @@
         "layer1.inner_margin": [12, 40, 12, 19],
         "layer1.opacity": 1.0,
         "content_margin": [11, 8, 11, 17]
-    },
-    // Quick panel background (Retina fix)
-    {
-        "class": "overlay_control",
-        "settings": ["soda_retina_fix"],
-        "layer0.tint": [238, 238, 238],
-        "layer0.opacity": 1.0,
-        "content_margin": [6, 8, 6, 6]
     },
 
 //
