@@ -104,6 +104,8 @@
         "fg": [80, 80, 80],
         "shadow_color": [255, 255, 255],
         "shadow_offset": [0, 0],
+        "font.face": "Helvetica Neue",
+        "font.size": 11.5,
         "font.italic": false
     },
     {
@@ -378,7 +380,8 @@
     // General labels
     {
         "class": "label_control",
-        "color": [0, 0, 0]
+        "color": [0, 0, 0],
+        "font.face": "Helvetica Neue"        
     },
     // Text field labels
     {
@@ -410,7 +413,8 @@
     // Tooltip content
     {
         "class": "tool_tip_label_control",
-        "color": [0, 0, 0]
+        "color": [0, 0, 0],
+        "font.face": "Helvetica Neue"
     },
 
 //
@@ -492,6 +496,7 @@
         "color": [0, 0, 0],
         "shadow_color": [255, 255, 255],
         "shadow_offset": [0, 0],
+        "font.face": "Helvetica Neue",
         "font.bold": false,
         "font.italic": false
     },
