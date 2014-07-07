@@ -6,6 +6,8 @@ Based on Soda Theme by Ian Hill ([http://buymeasoda.com/](http://buymeasoda.com/
 
 ## Design
 
+![Screenshot](https://raw.githubusercontent.com/wiki/iccir/El-Capitan-Theme/Screenshot.png)
+
 (Add screeshots)
 
 ## Installation
