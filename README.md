@@ -12,7 +12,7 @@ Based on Soda Theme by Ian Hill ([http://buymeasoda.com/](http://buymeasoda.com/
 
 ## Installation
 
-Soda theme is designed to work with the latest development builds of [Sublime Text 3](http://www.sublimetext.com/3dev).
+El Capitan theme is designed to work with the latest development builds of [Sublime Text 3](http://www.sublimetext.com/3dev).
 
 ### Using Sublime Package Control
 
