@@ -79,7 +79,7 @@
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
         "layer0.texture": "Theme - El Capitan/Assets/tab-dirty.png",
-        "layer0.opacity": 0.85  
+        "layer0.opacity": 0.5   
     },
     // Tab close button hover
     {
@@ -405,7 +405,7 @@
     // Tooltip container
     {
         "class": "tool_tip_control",
-        "layer0.texture": "Theme - El Capitan/Soda Light/tooltip.png",
+        "layer0.texture": "Theme - El Capitan/Assets/tooltip.png",
         "layer0.inner_margin": [1, 1],
         "layer0.opacity": 0.95,
         "content_margin": [3, 3]
@@ -544,45 +544,51 @@
     // Sidebar file close
     {
         "class": "close_button",
-        "layer0.texture": "Theme - El Capitan/Soda Light/file-close.png",
-        "layer0.opacity": 0.0,
+        "layer0.texture": "Theme - El Capitan/Assets/file-close.png",
         "layer0.inner_margin": 0,
+        "layer0.tint": [ 0, 0, 0 ],
+        "layer0.opacity": 0.0,
         "content_margin": [8, 8]
     },
     {
         "class": "close_button",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.65
     },
     // Sidebar file dirty
     {
         "class": "close_button",
         "attributes": ["dirty"],
-        "layer0.texture": "Theme - El Capitan/Soda Light/file-dirty.png",
-        "layer0.opacity": 1.0
+        "layer0.texture": "Theme - El Capitan/Assets/file-dirty.png",
+        "layer0.opacity": 0.65
     },
     {
         "class": "close_button",
         "attributes": ["dirty"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - El Capitan/Soda Light/file-dirty-selected.png"
+        "layer0.texture": "Theme - El Capitan/Assets/file-dirty.png",
+        "layer0.tint": [ 255, 255, 255 ],
+        "layer0.opacity": 1.0
     },
     {
         "class": "close_button",
         "attributes": ["dirty"],
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - El Capitan/Soda Light/file-close.png"
+        "layer0.texture": "Theme - El Capitan/Assets/file-close-hover.png"
     },
     // Sidebar file close hover
     {
         "class": "close_button",
-        "attributes": ["hover"],
-        "layer0.texture": "Theme - El Capitan/Soda Light/file-close-hover.png"
+        "attributes": ["hover"], 
+        "layer0.texture": "Theme - El Capitan/Assets/file-close-hover.png",
+        "layer0.tint": [ 0, 0, 0 ],
+        "layer0.opacity": 0.85
     },
     {
         "class": "close_button",
         "parents": [{"class": "tree_row", "attributes": ["hover", "selected"]}],
-        "layer0.texture": "Theme - El Capitan/Soda Light/file-close-selected.png"
+        "layer0.tint": [ 255, 255, 255 ],
+        "layer0.opacity": 1.0
     },
 
 //
@@ -737,13 +743,10 @@
     // Quick panel background
     {
         "class": "overlay_control",
-        "layer0.texture": "Theme - El Capitan/Soda Light/quick-panel-background.png",
-        "layer0.inner_margin": [12, 6, 12, 15],
+        "layer0.texture": "Theme - El Capitan/Assets/quick-panel-background.png",
+        "layer0.inner_margin": [10, 16, 10, 10],
         "layer0.opacity": 1.0,
-        "layer1.texture": "Theme - El Capitan/Soda Light/quick-panel-sections.png",
-        "layer1.inner_margin": [12, 40, 12, 19],
-        "layer1.opacity": 1.0,
-        "content_margin": [11, 8, 11, 17]
+        "content_margin": [4, 16, 4, 10 ]
     },
 
 //
@@ -752,39 +755,47 @@
 
     {
         "class": "quick_panel",
-        "row_padding": [5, 2],
-        "layer0.tint": [252, 252, 252],
-        "layer0.opacity": 1.0
+        "row_padding": [0, 4]
     },
+
+    {
+        "class": "text_line_control",
+        "parents": [{"class": "overlay_control" }],
+        "layer0.texture": "Theme - El Capitan/Assets/quick-panel-text-field.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [38, 8, 38, 8],
+        "content_margin": [38, 6, 38, 6]
+    },
+
     {
         "class": "quick_panel_row",
-        "layer0.texture": "Theme - El Capitan/Soda Light/quick-panel-row.png",
+        "layer0.texture": "Theme - El Capitan/Assets/quick-panel-row.png",
         "layer0.inner_margin": [2, 2, 2, 2],
         "layer0.opacity": 1.0
     },
     {
         "class": "quick_panel_row",
         "attributes": ["selected"],
-        "layer0.texture": "Theme - El Capitan/Soda Light/quick-panel-row-selected.png"
+        "layer0.texture": "Theme - El Capitan/Assets/quick-panel-row-selected.png"
     },
     {
         "class": "quick_panel_label",
-        "fg": [50, 50, 50, 255],
-        "match_fg": [0, 0, 0, 255],
-        "selected_fg": [25, 25, 25, 255],
-        "selected_match_fg": [0, 0, 0, 255]
+        "fg": [60, 60, 60 ],
+        "match_fg": [0, 0, 0 ],
+        "selected_fg": [40, 40, 40 ],
+        "selected_match_fg": [0, 0, 0 ]
     },
     {
         "class": "quick_panel_path_label",
-        "fg": [150, 150, 150, 255],
-        "match_fg": [90, 90, 90, 255],
-        "selected_fg": [120, 120, 120, 255],
-        "selected_match_fg": [90, 90, 90, 255]
+        "fg": [120, 120, 120, 255],
+        "match_fg": [0, 0, 0, 255],
+        "selected_fg": [40, 40, 40 ],
+        "selected_match_fg": [0, 0, 0 ]
     },
     {
         "class": "quick_panel_score_label",
-        "fg": [72, 139, 211, 255],
-        "selected_fg": [72, 139, 211, 255]
+        "fg": [160, 160, 160, 255],
+        "selected_fg": [120, 120, 120, 255]
     },
 
 //
@@ -793,14 +804,14 @@
 
     {
         "class": "mini_quick_panel_row",
-        "layer0.texture": "Theme - El Capitan/Soda Light/quick-panel-row.png",
+        "layer0.texture": "Theme - El Capitan/Assets/quick-panel-row.png",
         "layer0.inner_margin": [2, 2, 2, 2],
         "layer0.opacity": 1.0
     },
     {
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
-        "layer0.texture": "Theme - El Capitan/Soda Light/quick-panel-row-selected.png"
+        "layer0.texture": "Theme - El Capitan/Assets/quick-panel-row-selected.png"
     },
 
 //
@@ -815,7 +826,7 @@
     },
     {
         "class": "auto_complete",
-        "row_padding": [4, 2]
+        "row_padding": [1, 2]
     },
     {
         "class": "auto_complete_label",
@@ -826,7 +837,7 @@
     },
     {
         "class": "table_row",
-        "layer0.texture": "Theme - El Capitan/Soda Light/autocomplete-row-selected.png",
+        "layer0.texture": "Theme - El Capitan/Assets/autocomplete-row-selected.png",
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [3, 1]
     },
