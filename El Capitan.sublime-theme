@@ -755,7 +755,7 @@
 
     {
         "class": "quick_panel",
-        "row_padding": [0, 4]
+        "row_padding": [8, 4]
     },
 
     {
@@ -763,8 +763,8 @@
         "parents": [{"class": "overlay_control" }],
         "layer0.texture": "Theme - El Capitan/Assets/quick-panel-text-field.png",
         "layer0.opacity": 1.0,
-        "layer0.inner_margin": [38, 8, 38, 8],
-        "content_margin": [38, 6, 38, 6]
+        "layer0.inner_margin": [18, 8, 18, 8],
+        "content_margin": [16, 6, 16, 6]
     },
 
     {
