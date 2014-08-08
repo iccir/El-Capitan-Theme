@@ -738,7 +738,7 @@
         "layer0.texture": "Theme - El Capitan/Assets/panel-background.png",
         "layer0.inner_margin": [2, 2, 2, 2],
         "layer0.opacity": 1.0,
-        "content_margin": [2, 3, 2, 1]
+        "content_margin": [0, 0, 0, 0]
     },
     // Quick panel background
     {
@@ -755,7 +755,9 @@
 
     {
         "class": "quick_panel",
-        "row_padding": [8, 4]
+        "row_padding": [8, 4],
+        "layer0.tint": [248, 248, 248],
+        "layer0.opacity": 1.0
     },
 
     {
