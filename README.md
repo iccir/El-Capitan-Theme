@@ -8,7 +8,7 @@ Based on Soda Theme by Ian Hill ([http://buymeasoda.com/](http://buymeasoda.com/
 
 ![Screenshot](https://raw.githubusercontent.com/wiki/iccir/El-Capitan-Theme/Screenshot.png)
 
-(Add screeshots)
+Also available in a [dark version](https://github.com/r3volution11/El-Capitan-Theme), courtesy of [Doug Hardester](https://github.com/r3volution11)!
 
 ## Installation
 
