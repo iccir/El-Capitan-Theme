@@ -174,10 +174,9 @@
 
     {
         "class": "fold_button_control",
-        "layer0.texture": "Theme - El Capitan/Assets/group-closed.png",
+        "layer0.texture": "Theme - El Capitan/Assets/arrow-right.png",
         "layer0.inner_margin": 0,
         "content_margin": [8, 8],
-        "layer0.tint": [ 0, 0, 0 ],
         "layer0.opacity": 0.5
     },
     {
@@ -188,8 +187,7 @@
     {
         "class": "fold_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - El Capitan/Assets/group-open.png",
-        "layer0.tint": [ 0, 0, 0 ],
+        "layer0.texture": "Theme - El Capitan/Assets/arrow-down.png"
     },
 
 //
