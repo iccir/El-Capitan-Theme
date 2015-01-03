@@ -174,22 +174,15 @@
 
     {
         "class": "fold_button_control",
-        "layer0.texture": "Theme - El Capitan/Assets/group-closed.png",
+        "layer0.texture": "Theme - El Capitan/Assets/fold-closed.png",
         "layer0.inner_margin": 0,
         "content_margin": [8, 8],
-        "layer0.tint": [ 0, 0, 0 ],
-        "layer0.opacity": 0.5
-    },
-    {
-        "class": "fold_button_control",
-        "attributes": ["hover"],
-        "layer0.opacity": 0.65
+        "layer0.opacity": 1.0
     },
     {
         "class": "fold_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - El Capitan/Assets/group-open.png",
-        "layer0.tint": [ 0, 0, 0 ],
+        "layer0.texture": "Theme - El Capitan/Assets/fold-open.png"
     },
 
 //
@@ -459,8 +452,8 @@
     {
         "class": "sidebar_tree",
         "row_padding": [8, 3],
-        "indent": 15,
-        "indent_offset": 15,
+        "indent": 13,
+        "indent_offset": 13,
         "indent_top_level": false
     },
     // Sidebar rows
@@ -600,14 +593,14 @@
         "class": "disclosure_button_control",
         "content_margin": [8, 8],
         "layer0.texture": "Theme - El Capitan/Assets/group-closed.png",
-        "layer0.opacity": 0.65,
+        "layer0.opacity": 0.42,
         "layer0.tint": [ 0, 0, 0 ],
         "layer0.inner_margin": 0
     },
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.opacity": 0.85,
+        "layer0.opacity": 0.5
     },
     {
         "class": "disclosure_button_control",
@@ -629,27 +622,14 @@
     // Sidebar folder closed
     {
         "class": "icon_folder",
-        "layer0.texture": "Theme - El Capitan/Assets/folder-closed.png",
-        "layer0.opacity": 0.65,
-        "layer0.tint": [ 0, 0, 0 ],
+        "layer0.texture": "Theme - El Capitan/icons/folder.png",
         "content_margin": [8, 8]
-    },
-    {
-        "class": "icon_folder",
-        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.opacity": 0.85
-    },
-    {
-        "class": "icon_folder",
-        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.tint": [ 255, 255, 255 ],
-        "layer0.opacity": 1.0
     },
     // Sidebar folder open
     {
         "class": "icon_folder",
         "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
-        "layer0.texture": "Theme - El Capitan/Assets/folder-open.png"
+        "layer0.texture": "Theme - El Capitan/icons/folder_opened.png"
     },
     // Sidebar folder loading
     {
@@ -673,7 +653,7 @@
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
-    // Sidebar file icons
+//    Sidebar file icons
     {
         "class": "icon_file_type",
         // layer0.texture is filled in by code with the relevant icon name
