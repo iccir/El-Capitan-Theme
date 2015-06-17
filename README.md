@@ -1,6 +1,6 @@
 # El Capitan Theme
 
-OS X Yosemite inspired light theme for Sublime Text 3.
+OS X inspired light theme for Sublime Text 3.
 
 Based on Soda Theme by Ian Hill ([http://buymeasoda.com/](http://buymeasoda.com/))
 
@@ -10,16 +10,18 @@ Based on Soda Theme by Ian Hill ([http://buymeasoda.com/](http://buymeasoda.com/
 
 Also available in a [dark version](https://github.com/r3volution11/El-Capitan-Theme), courtesy of [Doug Hardester](https://github.com/r3volution11)!
 
+The code font shown in the screenshot is Monaco.  The color scheme is [Xcode-ish](https://gist.github.com/iccir/b999104536ce8211e5e7).
+
+
 ## Installation
 
 El Capitan theme is designed to work with the latest development builds of [Sublime Text 3](http://www.sublimetext.com/3dev).
 
-### Using Sublime Package Control
+#### Package Control
 
-(Investigate Package Control)
-<!--If you are using Will Bond's excellent [Sublime Package Control](http://wbond.net/sublime_packages/package_control), you can easily install Soda Theme via the `Package Control: Install Package` menu item. The Soda Theme package is listed as `Theme - Soda` in the packages list.-->
+If you are using [Sublime Package Control](https://packagecontrol.io), you can easily install the theme via `Package Control: Install Package` and then select the  `Theme - El Capitan` package.
 
-### Using Git
+#### Using Git
 
 Alternatively, if you are a git user, you can install the theme and keep up to date by cloning the repo directly into your `Packages` directory in the Sublime Text application settings area.
 
@@ -29,18 +31,16 @@ While inside the `Packages` directory, clone the theme repository using the comm
 
     git clone https://github.com/iccir/El-Capitan-Theme/ "Theme - El Capitan"
 
-### Download Manually
+#### Download Manually
 
 * Download the files using the GitHub .zip download option
 * Unzip the files and rename the folder to `Theme - El Capitan`
 * Find your `Packages` directory using the menu item  `Preferences -> Browse Packages...`
 * Copy the folder into your Sublime Text `Packages` directory
 
-## Activating the theme
+## Activating and configuring the theme
 
-To configure Sublime Text to use the theme, follow the instructions below for your specific version.
-
-### Sublime Text 3
+To configure Sublime Text to use the theme, follow the instructions below:
 
 * Open your User Settings Preferences file `Sublime Text -> Preferences -> Settings - User`
 * Add (or update) your theme entry to be `"theme": "El Capitan.sublime-theme"`
@@ -48,13 +48,20 @@ To configure Sublime Text to use the theme, follow the instructions below for yo
 **Example Sublime Text 3 User Settings**
 
     {
-        "theme": "El Capitan.sublime-theme"
+        "theme": "El Capitan.sublime-theme",
+        
+        "el_capitan_font_default": false,
+        "el_capitan_font_san_francisco": false,
+        "el_capitan_font_helvetica_neue": false,
+        "el_capitan_font_helvetica": false,
+        "el_capitan_sidebar_blue_folders": false
     }
 
-
-### Code Font
-
-The code font shown in the screenshot is Monaco.
+* `el_capitan_font_default` - If `true`, prevents the theme from specifying fonts (for systems without Helvetica Neue or SF)
+* `el_capitan_font_san_francisco` - If `true`, the font is explicitly set to San Francisco
+* `el_capitan_font_helvetica_neue` - If `true`, the font is explicitly set to Helvetica Neue
+* `el_capitan_font_helvetica` - If `true`, the font is explicitly set to Helvetica
+* `el_capitan_sidebar_blue_folders` - If `true`, the sidebar uses blue folders rather than Xcode-style yellow folders.
 
 ## Development
 
