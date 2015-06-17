@@ -1,4 +1,35 @@
 [
+//
+// FONTS
+//
+
+    // Change from "Helvetica Neue" to "SF UI Text" once 10.11 is released
+    { "class": "tab_label",              "font.face": "Helvetica Neue", "settings": [ "!el_capitan_font_default"       ] },
+    { "class": "label_control",          "font.face": "Helvetica Neue", "settings": [ "!el_capitan_font_default"       ] },
+    { "class": "tool_tip_label_control", "font.face": "Helvetica Neue", "settings": [ "!el_capitan_font_default"       ] },
+    { "class": "sidebar_heading",        "font.face": "Helvetica Neue", "settings": [ "!el_capitan_font_default"       ] },
+    { "class": "sidebar_label",          "font.face": "Helvetica Neue", "settings": [ "!el_capitan_font_default"       ] },
+
+    // Settings
+    { "class": "tab_label",              "font.face": "Helvetica",      "settings": [ "el_capitan_font_helvetica"      ] },
+    { "class": "tab_label",              "font.face": "Helvetica Neue", "settings": [ "el_capitan_font_helvetica_neue" ] },
+    { "class": "tab_label",              "font.face": "SF UI Text",     "settings": [ "el_capitan_font_san_francisco"  ] },
+
+    { "class": "label_control",          "font.face": "Helvetica",      "settings": [ "el_capitan_font_helvetica"      ] },
+    { "class": "label_control",          "font.face": "Helvetica Neue", "settings": [ "el_capitan_font_helvetica_neue" ] },
+    { "class": "label_control",          "font.face": "SF UI Text",     "settings": [ "el_capitan_font_san_francisco"  ] },
+
+    { "class": "tool_tip_label_control", "font.face": "Helvetica",      "settings": [ "el_capitan_font_helvetica"      ] },
+    { "class": "tool_tip_label_control", "font.face": "Helvetica Neue", "settings": [ "el_capitan_font_helvetica_neue" ] },
+    { "class": "tool_tip_label_control", "font.face": "SF UI Text",     "settings": [ "el_capitan_font_san_francisco"  ] },
+
+    { "class": "sidebar_heading",        "font.face": "Helvetica",      "settings": [ "el_capitan_font_helvetica"      ] },
+    { "class": "sidebar_heading",        "font.face": "Helvetica Neue", "settings": [ "el_capitan_font_helvetica_neue" ] },
+    { "class": "sidebar_heading",        "font.face": "SF UI Text",     "settings": [ "el_capitan_font_san_francisco"  ] },
+
+    { "class": "sidebar_label",          "font.face": "Helvetica",      "settings": [ "el_capitan_font_helvetica"      ] },
+    { "class": "sidebar_label",          "font.face": "Helvetica Neue", "settings": [ "el_capitan_font_helvetica_neue" ] },
+    { "class": "sidebar_label",          "font.face": "SF UI Text",     "settings": [ "el_capitan_font_san_francisco"  ] },
 
 //
 // TABS (REGULAR)
@@ -104,7 +135,6 @@
         "fg": [80, 80, 80],
         "shadow_color": [255, 255, 255],
         "shadow_offset": [0, 0],
-        "font.face": "Helvetica Neue",
         "font.size": 11.5,
         "font.italic": false
     },
@@ -374,7 +404,6 @@
     {
         "class": "label_control",
         "color": [0, 0, 0],
-        "font.face": "Helvetica Neue"        
     },
     // Text field labels
     {
@@ -407,7 +436,6 @@
     {
         "class": "tool_tip_label_control",
         "color": [0, 0, 0],
-        "font.face": "Helvetica Neue"
     },
 
 //
@@ -489,7 +517,6 @@
         "color": [0, 0, 0],
         "shadow_color": [255, 255, 255],
         "shadow_offset": [0, 0],
-        "font.face": "Helvetica Neue",
         "font.bold": false,
         "font.italic": false
     },
@@ -630,6 +657,19 @@
         "class": "icon_folder",
         "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
         "layer0.texture": "Theme - El Capitan/icons/folder_opened.png"
+    },
+    // Sidebar folder closed (blue)
+    {
+        "class": "icon_folder",
+        "settings": [ "el_capitan_sidebar_blue_folders" ],
+        "layer0.texture": "Theme - El Capitan/icons/folder_blue.png",
+    },
+    // Sidebar folder open (blue)
+    {
+        "class": "icon_folder",
+        "settings": [ "el_capitan_sidebar_blue_folders" ],
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+        "layer0.texture": "Theme - El Capitan/icons/folder_blue_opened.png"
     },
     // Sidebar folder loading
     {
