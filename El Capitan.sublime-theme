@@ -2,34 +2,32 @@
 //
 // FONTS
 //
-
-    // Change from "Helvetica Neue" to "SF UI Text" once 10.11 is released
-    { "class": "tab_label",              "font.face": "Helvetica Neue", "settings": [ "!el_capitan_font_default"       ] },
-    { "class": "label_control",          "font.face": "Helvetica Neue", "settings": [ "!el_capitan_font_default"       ] },
-    { "class": "tool_tip_label_control", "font.face": "Helvetica Neue", "settings": [ "!el_capitan_font_default"       ] },
-    { "class": "sidebar_heading",        "font.face": "Helvetica Neue", "settings": [ "!el_capitan_font_default"       ] },
-    { "class": "sidebar_label",          "font.face": "Helvetica Neue", "settings": [ "!el_capitan_font_default"       ] },
+    { "class": "tab_label",              "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ] },
+    { "class": "label_control",          "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ] },
+    { "class": "tool_tip_label_control", "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ] },
+    { "class": "sidebar_heading",        "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ] },
+    { "class": "sidebar_label",          "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ] },
 
     // Settings
-    { "class": "tab_label",              "font.face": "Helvetica",      "settings": [ "el_capitan_font_helvetica"      ] },
-    { "class": "tab_label",              "font.face": "Helvetica Neue", "settings": [ "el_capitan_font_helvetica_neue" ] },
-    { "class": "tab_label",              "font.face": "SF UI Text",     "settings": [ "el_capitan_font_san_francisco"  ] },
+    { "class": "tab_label",              "font.face": "Helvetica",         "settings": [ "el_capitan_font_helvetica"      ] },
+    { "class": "tab_label",              "font.face": "Helvetica Neue",    "settings": [ "el_capitan_font_helvetica_neue" ] },
+    { "class": "tab_label",              "font.face": ".SFNSText-Regular", "settings": [ "el_capitan_font_san_francisco"  ] },
 
-    { "class": "label_control",          "font.face": "Helvetica",      "settings": [ "el_capitan_font_helvetica"      ] },
-    { "class": "label_control",          "font.face": "Helvetica Neue", "settings": [ "el_capitan_font_helvetica_neue" ] },
-    { "class": "label_control",          "font.face": "SF UI Text",     "settings": [ "el_capitan_font_san_francisco"  ] },
+    { "class": "label_control",          "font.face": "Helvetica",         "settings": [ "el_capitan_font_helvetica"      ] },
+    { "class": "label_control",          "font.face": "Helvetica Neue",    "settings": [ "el_capitan_font_helvetica_neue" ] },
+    { "class": "label_control",          "font.face": ".SFNSText-Regular", "settings": [ "el_capitan_font_san_francisco"  ] },
 
-    { "class": "tool_tip_label_control", "font.face": "Helvetica",      "settings": [ "el_capitan_font_helvetica"      ] },
-    { "class": "tool_tip_label_control", "font.face": "Helvetica Neue", "settings": [ "el_capitan_font_helvetica_neue" ] },
-    { "class": "tool_tip_label_control", "font.face": "SF UI Text",     "settings": [ "el_capitan_font_san_francisco"  ] },
+    { "class": "tool_tip_label_control", "font.face": "Helvetica",         "settings": [ "el_capitan_font_helvetica"      ] },
+    { "class": "tool_tip_label_control", "font.face": "Helvetica Neue",    "settings": [ "el_capitan_font_helvetica_neue" ] },
+    { "class": "tool_tip_label_control", "font.face": ".SFNSText-Regular", "settings": [ "el_capitan_font_san_francisco"  ] },
 
-    { "class": "sidebar_heading",        "font.face": "Helvetica",      "settings": [ "el_capitan_font_helvetica"      ] },
-    { "class": "sidebar_heading",        "font.face": "Helvetica Neue", "settings": [ "el_capitan_font_helvetica_neue" ] },
-    { "class": "sidebar_heading",        "font.face": "SF UI Text",     "settings": [ "el_capitan_font_san_francisco"  ] },
+    { "class": "sidebar_heading",        "font.face": "Helvetica",         "settings": [ "el_capitan_font_helvetica"      ] },
+    { "class": "sidebar_heading",        "font.face": "Helvetica Neue",    "settings": [ "el_capitan_font_helvetica_neue" ] },
+    { "class": "sidebar_heading",        "font.face": ".SFNSText-Regular", "settings": [ "el_capitan_font_san_francisco"  ] },
 
-    { "class": "sidebar_label",          "font.face": "Helvetica",      "settings": [ "el_capitan_font_helvetica"      ] },
-    { "class": "sidebar_label",          "font.face": "Helvetica Neue", "settings": [ "el_capitan_font_helvetica_neue" ] },
-    { "class": "sidebar_label",          "font.face": "SF UI Text",     "settings": [ "el_capitan_font_san_francisco"  ] },
+    { "class": "sidebar_label",          "font.face": "Helvetica",         "settings": [ "el_capitan_font_helvetica"      ] },
+    { "class": "sidebar_label",          "font.face": "Helvetica Neue",    "settings": [ "el_capitan_font_helvetica_neue" ] },
+    { "class": "sidebar_label",          "font.face": ".SFNSText-Regular", "settings": [ "el_capitan_font_san_francisco"  ] },
 
 //
 // TABS (REGULAR)
@@ -110,7 +108,7 @@
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
         "layer0.texture": "Theme - El Capitan/Assets/tab-dirty.png",
-        "layer0.opacity": 0.5   
+        "layer0.opacity": 0.5
     },
     // Tab close button hover
     {
@@ -599,7 +597,7 @@
     // Sidebar file close hover
     {
         "class": "close_button",
-        "attributes": ["hover"], 
+        "attributes": ["hover"],
         "layer0.texture": "Theme - El Capitan/Assets/file-close-hover.png",
         "layer0.tint": [ 0, 0, 0 ],
         "layer0.opacity": 0.85
