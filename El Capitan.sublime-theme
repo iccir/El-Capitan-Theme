@@ -489,6 +489,14 @@
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [1, 1]
     },
+    // Sidebar rows (graphite)
+    {
+        "class": "tree_row",
+        "settings": [ "el_capitan_sidebar_graphite" ],
+        "layer0.texture": "Theme - El Capitan/Assets/sidebar-row-selected-graphite.png",
+        "layer0.opacity": 0.0,
+        "layer0.inner_margin": [1, 1]
+    },
     // Sidebar row selected
     {
         "class": "tree_row",
@@ -668,6 +676,19 @@
         "settings": [ "el_capitan_sidebar_blue_folders" ],
         "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
         "layer0.texture": "Theme - El Capitan/icons/folder_blue_opened.png"
+    },
+        // Sidebar folder closed (graphite)
+    {
+        "class": "icon_folder",
+        "settings": [ "el_capitan_sidebar_graphite" ],
+        "layer0.texture": "Theme - El Capitan/icons/folder_graphite.png",
+    },
+    // Sidebar folder open (graphite)
+    {
+        "class": "icon_folder",
+        "settings": [ "el_capitan_sidebar_graphite" ],
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+        "layer0.texture": "Theme - El Capitan/icons/folder_graphite_opened.png"
     },
     // Sidebar folder loading
     {
