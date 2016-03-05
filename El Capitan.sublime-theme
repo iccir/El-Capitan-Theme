@@ -461,6 +461,11 @@
         "shadow_color": [255, 255, 255],
         "shadow_offset": [0, 0]
     },
+    // Panel switcher
+    {
+        "class": "panel_button_control",
+        "layer0.tint": [ 0, 0, 0 ],
+    },
 
 //
 // SIDEBAR
