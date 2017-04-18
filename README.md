@@ -62,6 +62,7 @@ To configure Sublime Text to use the theme, follow the instructions below:
 * `el_capitan_font_helvetica_neue` - If `true`, the font is explicitly set to Helvetica Neue
 * `el_capitan_font_helvetica` - If `true`, the font is explicitly set to Helvetica
 * `el_capitan_sidebar_blue_folders` - If `true`, the sidebar uses blue folders rather than Xcode-style yellow folders.
+* 'el_capitan_sidebar_graphite' - If 'true', the sidebar uses graphite folders and selected states, to match the UI Graphite settings in OS X System Preferences > General > Appearance setting.
 
 ## Development
 
