@@ -1,3 +1,7 @@
+<h2>
+<i>Note: <a href="https://github.com/iccir/Timeless-Theme">Timeless</a> is the successor to El Capitan</i>
+</h2>
+
 # El Capitan Theme
 
 OS X inspired light theme for Sublime Text 3.
