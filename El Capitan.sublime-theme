@@ -464,7 +464,9 @@
     // Panel switcher
     {
         "class": "panel_button_control",
-        "layer0.tint": [ 0, 0, 0 ],
+        "layer0.texture": "Theme - El Capitan/Assets/panels.png",
+        "layer0.opacity": 0.7,
+        "content_margin": [12, 8]
     },
 
 //
